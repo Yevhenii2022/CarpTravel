@@ -1,10 +1,13 @@
-import Image from "next/image";
+import dynamic from "next/dynamic";
 
-export default function Home() {
+const Header = dynamic(() => import("../sections/Header/Header"));
+
+export default function App() {
 	return (
-		<main>
-			<div className="p-4">CarpTravel</div>
-		</main>
+		<div className="container">
+			<Header />
+			<main></main>
+		</div>
 	);
 }
 

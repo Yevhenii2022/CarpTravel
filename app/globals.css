@@ -62,6 +62,10 @@ ul {
 	transition: all 0.3s ease;
 }
 
+.container {
+	@apply w-full mx-auto px-5 py-9;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
