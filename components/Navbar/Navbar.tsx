@@ -3,6 +3,7 @@
 import { FC, useState } from "react";
 import { INav, navigation } from "@/helpers/navigation";
 import Link from "next/link";
+import css from "./Navbar.module.scss";
 
 const Navbar: FC = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -17,7 +18,7 @@ const Navbar: FC = () => {
 						<li key={id}>
 							<Link
 								href="/"
-								className="   "
+								className={css.link}
 							>
 								{title}
 							</Link>
